@@ -80,9 +80,9 @@ function Hero() {
       </div>
       {/* oofers section  */}
 
-      <Container>
-        <Row className="my-5 d-flex justify-content-center">
-          <div className="plant-img d-flex justify-content-evenly overflow-x-auto">
+      <Container className='plants-category'>
+        <Row className="my-5 d-flex justify-content-center overflow-x-auto">
+          <div className="plant-img d-flex justify-content-around ">
             <div className="justify-content-center">
               <a href="">
                 <img src={plantImage} alt="" className="plantImg" />
@@ -126,7 +126,7 @@ function Hero() {
       {/* oofers section  */}
       <div className="bg-register">
         <Container>
-          <Row className="py-3">
+          <Row className="py-3 ">
             <div className="col-md-6 d-flex justify-content-end">
               <div className="para h3">
                 <p>
@@ -154,28 +154,28 @@ function Hero() {
             <h2>Your Best Picks</h2>
           </div>
         <Row className="my-4">
-        <div className="col-md-3">
+        <div className="col-6 col-md-3">
             <a href="" className="textdecor h5"> <div className="bestimg">
             <img src={bestPicks} alt="" className="bextpick"/>
             </div>
             <p className="text-center py-2"> Plant</p>
             </a>
           </div>
-          <div className="col-md-3">
+          <div className="col-6 col-md-3">
             <a href="" className="textdecor h5"> <div className="bestimg">
             <img src={bestPicks} alt="" className="bextpick"/>
             </div>
             <p className="text-center py-2"> Plant</p>
             </a>
           </div>
-          <div className="col-md-3">
+          <div className="col-6 col-md-3">
             <a href="" className="textdecor h5"> <div className="bestimg">
             <img src={bestPicks} alt="" className="bextpick"/>
             </div>
             <p className="text-center py-2"> Plant</p>
             </a>
           </div>
-          <div className="col-md-3">
+          <div className="col-6 col-md-3">
             <a href="" className="textdecor h5"> <div className="bestimg">
             <img src={bestPicks} alt="" className="bextpick"/>
             </div>

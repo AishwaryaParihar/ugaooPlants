@@ -1,5 +1,5 @@
 .img{
-    background-image: url(./assets/summerpot.webp);
+    background-image: url(../../../assets/summerpot.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -7,7 +7,7 @@
     width: 100%;
   }
   .img1{
-    background-image: url(./assets/envdayDesktop-Banner.webp);
+    background-image: url(../../../assets/envdayDesktop-Banner.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
     width: 100%
   }
   .img2{
-    background-image: url(./assets/plantcaresummer.webp);
+    background-image: url(../../../assets/plantcaresummer.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
     width: 100%
   }
   .img3{
-    background-image: url(./assets/summerplant.webp);
+    background-image: url(../../../assets/summerplant.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,11 +46,22 @@
     font-size: 20px;
     color: #fff;
   }
+  /* .plants-category{
+    overflow-y: hidden;
+  } */
   .plantImg{
     margin: 0 auto 5px;
     border: 3px solid #e3b4d5;
     width: 120%;
     border-radius: 50%;
+  }
+  @media (max-width:992px) {
+    .plantImg{
+      width: 100%; 
+    }
+    .plants-category{
+      font-size: .8rem;
+    }
   }
   .bg-register{
     background-color: rgb(239,248,242);
