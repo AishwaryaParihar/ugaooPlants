@@ -108,7 +108,7 @@ function Nav() {
                   </li>
                 </ul>
                 <form
-                  className="  w-25"
+                  className="  w-25 d-none d-md-block"
                   role="search"
                 >
                   <div className="search-box w-100 mt-2  d-flex flex-nowrap border border-dark rounded-5">
@@ -121,7 +121,7 @@ function Nav() {
                     <i className="fa-solid fa-magnifying-glass text-success"></i>
                   </div>
                 </form>
-                <div className="flex-nowrap">
+                <div className="flex-nowrap d-none d-md-block">
                   <i className="fa-solid fa-indian-rupee-sign px-2 py-1 ms-4 border border-success rounded-circle text-success"></i>
                   <i className="fa-regular fa-user p-3 text-success"></i>
                   <i className="fa-solid fa-cart-shopping p-3 text-success"></i>
