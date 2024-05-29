@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+  }
+  .primarycolor {
+    color: #114c36;
+  }
+  
+  /* about ugaoo */
+  .whyugaoo h2 {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    
+  } 
+  .whyugaoo-p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+  
+  }
+  
+  .img-club{
+    width: 100%;
+    height: auto;  
+  }
+  .search-box {
+    position: relative;
+  }
+  .search-box input {
+    padding-left: 10px;
+  }
+  .search-box .fa-magnifying-glass {
+    position: absolute;
+    top: 50%;
+    right: 0.7rem;
+    transform: translateY(-50%);
+    color: #aaa;
+  }
+  .input-text {
+    font-size: 0.7rem;
+  }
+  .bgNav {
+    background-color: rgb(255, 246, 244);
+  }
+  
+  
