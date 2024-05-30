@@ -43,10 +43,85 @@
     color: #aaa;
   }
   .input-text {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
   .bgNav {
     background-color: rgb(255, 246, 244);
+    font-family: sans-serif;
   }
   
-  
+  .nav-font{
+    font-size: 15.4px;
+    color: #0f4c36;
+    transition: font-weight 2s ease-in;
+    
+  }
+  .nav-font:hover{
+    color: #617a71;
+    font-weight: 300;
+  }
+
+  /* nav.css */
+
+.navbar-nav01 .dropdown-menu01 {
+  display: none;
+  color: #0f4c36;
+  position: absolute;
+  background-color: rgb(255, 246, 244);
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+}
+
+.navbar-nav01 .dropdown-hover:hover .dropdown-menu01 {
+  display: block;
+}
+
+.navbar-nav01 .dropdown-hover {
+  position: relative;
+}
+
+.dropdown-menu01 li {
+  list-style: none;
+}
+
+.dropdown-menu01 .dropdown-item01 {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #0f4c36;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.activegreen{
+  color: #149253
+}
+
+.hover-line {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.hover-line::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #617a71;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-line:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
