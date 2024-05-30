@@ -143,16 +143,16 @@ function Nav() {
                   </li>
       
                 </ul>
-<<<<<<< HEAD
+
                 <form className="w-25" role="search">
                   <div className="search-box w-100 mt-2 d-flex flex-nowrap border border-dark rounded-5">
-=======
+
                 <form
                   className="  w-25 d-none d-md-block"
                   role="search"
                 >
                   <div className="search-box w-100 mt-2  d-flex flex-nowrap border border-dark rounded-5">
->>>>>>> 56f7d017aeb425e043a2606b9ffe50a990ab8f58
+
                     <input
                       className="form-control border-0 p-2 px-3 rounded-5 input-text"
                       type="search"
