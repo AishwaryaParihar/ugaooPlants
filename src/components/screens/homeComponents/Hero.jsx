@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import plantImage from "../../../assets/Ceramic_Pots_2.webp";
-import bestPicks from "../../../assets/bestPic.webp"
-import './hero.css'
+import bestPicks from "../../../assets/bestPic.webp";
+import "./hero.css";
 function Hero() {
   return (
     <div>
@@ -80,7 +80,7 @@ function Hero() {
       </div>
       {/* oofers section  */}
 
-      <Container className='plants-category'>
+      <Container className="plants-category">
         <Row className="my-5 d-flex justify-content-center overflow-x-auto">
           <div className="plant-img d-flex justify-content-around ">
             <div className="justify-content-center">
@@ -150,42 +150,50 @@ function Hero() {
 
       {/* your best picks */}
       <Container className="my-4">
-      <div className="heading">
-            <h2>Your Best Picks</h2>
-          </div>
+        <div className="heading">
+          <h2>Your Best Picks</h2>
+        </div>
         <Row className="my-4">
-        <div className="col-6 col-md-3">
-            <a href="" className="textdecor h5"> <div className="bestimg">
-            <img src={bestPicks} alt="" className="bextpick"/>
-            </div>
-            <p className="text-center py-2"> Plant</p>
+          <div className="col-6 col-md-3">
+            <a href="" className="textdecor h5">
+              {" "}
+              <div className="bestimg">
+                <img src={bestPicks} alt="" className="bextpick" />
+              </div>
+              <p className="text-center py-2"> Plant</p>
             </a>
           </div>
           <div className="col-6 col-md-3">
-            <a href="" className="textdecor h5"> <div className="bestimg">
-            <img src={bestPicks} alt="" className="bextpick"/>
-            </div>
-            <p className="text-center py-2"> Plant</p>
+            <a href="" className="textdecor h5">
+              {" "}
+              <div className="bestimg">
+                <img src={bestPicks} alt="" className="bextpick" />
+              </div>
+              <p className="text-center py-2"> Plant</p>
             </a>
           </div>
           <div className="col-6 col-md-3">
-            <a href="" className="textdecor h5"> <div className="bestimg">
-            <img src={bestPicks} alt="" className="bextpick"/>
-            </div>
-            <p className="text-center py-2"> Plant</p>
+            <a href="" className="textdecor h5">
+              {" "}
+              <div className="bestimg">
+                <img src={bestPicks} alt="" className="bextpick" />
+              </div>
+              <p className="text-center py-2"> Plant</p>
             </a>
           </div>
           <div className="col-6 col-md-3">
-            <a href="" className="textdecor h5"> <div className="bestimg">
-            <img src={bestPicks} alt="" className="bextpick"/>
-            </div>
-            <p className="text-center py-2"> Plant</p>
+            <a href="" className="textdecor h5">
+              {" "}
+              <div className="bestimg">
+                <img src={bestPicks} alt="" className="bextpick" />
+              </div>
+              <p className="text-center py-2"> Plant</p>
             </a>
           </div>
         </Row>
       </Container>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

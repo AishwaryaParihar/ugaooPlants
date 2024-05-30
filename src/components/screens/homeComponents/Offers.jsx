@@ -5,7 +5,7 @@ function Offers() {
     <>
       <section className="bg-warning">
         <div className="container-fluid">
-          <div className="d-flex justify-content-center align-atems-center">
+          <div className="d-flex justify-content-center align-atems-center py-3">
             <div className="row">
             <div className="col-md-6 ">
               <div className="para h3">

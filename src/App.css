@@ -7,9 +7,16 @@
 .primarycolor {
   color: #114c36;
 }
+.bgprimary{
+  background-color: rgb(20,146,83);
+}
 .point12px {
   font-size: 0.8rem;
 }
 .fwbold {
   font-weight: 600;
+}
+.nolink{
+  text-decoration: none;
+color: black;
 }
