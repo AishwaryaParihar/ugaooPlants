@@ -1,13 +1,12 @@
-import React from 'react';
+import React from 'react'
 import logo from "../../assets/greenlogo.png";
-import './nav.css';
-
+import './nav.css'
 function Nav() {
   return (
     <div>
-      <section>
+       <section>
         <nav
-          className="navbar nav-font bgNav navbar-expand-lg fixed-top"
+          className="navbar bgNav navbar-expand-lg fixed-top"
           tabIndex="3"
         >
           <div className="container-fluid container-xl">
@@ -23,10 +22,10 @@ function Nav() {
             </button>
             <img src={logo} alt="" />
             <div className="d-block d-lg-none">
-              <i className="fa-solid fa-indian-rupee-sign px-2 py-1 ms-4 border border-success rounded-circle text-success"></i>
-              <i className="fa-regular fa-user p-3 text-success"></i>
-              <i className="fa-solid fa-cart-shopping p-3 text-success"></i>
-            </div>
+                  <i className="fa-solid fa-indian-rupee-sign px-2 py-1 ms-4 border border-success rounded-circle text-success"></i>
+                  <i className="fa-regular fa-user p-3 text-success"></i>
+                  <i className="fa-solid fa-cart-shopping p-3 text-success"></i>
+                </div>
             <div
               className="offcanvas offcanvas-start"
               tabIndex="-1"
@@ -35,7 +34,7 @@ function Nav() {
             >
               <div className="offcanvas-header">
                 <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                  <img src={logo} alt="" />
+                <img src={logo} alt="" />
                 </h5>
                 <button
                   type="button"
@@ -45,116 +44,76 @@ function Nav() {
                 ></button>
               </div>
               <div className="offcanvas-body">
-                <ul className="navbar-nav  navbar-nav01 justify-content-center flex-grow-1 text-uppercase point12px fwbold mt-2">
-                  <li className="nav-item dropdown-hover">
-                    <a className="nav-link hover-line nav-font" aria-current="page" href="#">
+                <ul className="navbar-nav justify-content-center flex-grow-1 text-uppercase point12px fwbold mt-2">
+                  <li className="nav-item">
+                    <a className="nav-link active" aria-current="page" href="#">
                       plants
                     </a>
-                    <ul className="dropdown-menu dropdown-menu01 dropdown-item01">
-                      <li>
-                        <a className="dropdown-item dropdown-item01 " href="#">
-                          <span className="hover-line nav-font">Plant Action</span>
-                        </a>
-                      </li>
-                      <li>
-                      <a className="dropdown-item dropdown-item01 " href="#">
-                          <span className="hover-line nav-font">Plant Action</span>
-                        </a>
-                      </li>
-                    </ul>
                   </li>
-                  <li className="nav-item  dropdown-hover">
-                    <a className="nav-link hover-line nav-font" href="#">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
                       seeds
                     </a>
-                    <ul className="dropdown-menu dropdown-menu01 dropdown-item01">
-                      <li>
-                        <a className="dropdown-item dropdown-item01 " href="#">
-                          <span className="hover-line nav-font">Plant Action</span>
-                        </a>
-                      </li>
-                      <li>
-                      <a className="dropdown-item dropdown-item01 " href="#">
-                          <span className="hover-line nav-font">Plant Action</span>
-                        </a>
-                      </li>
-                    </ul>
                   </li>
-                  <li className="nav-item  dropdown-hover">
-                    <a className="nav-link hover-line nav-font" href="#">
-                  pots & planters
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      pots & planters
                     </a>
-                    <ul className="dropdown-menu dropdown-menu01 dropdown-item01">
-                      <li>
-                        <a className="dropdown-item dropdown-item01 " href="#">
-                          <span className="hover-line nav-font">Plant Action</span>
-                        </a>
-                      </li>
-                      <li>
-                      <a className="dropdown-item dropdown-item01 " href="#">
-                          <span className="hover-line nav-font">Plant Action</span>
-                        </a>
-                      </li>
-                    </ul>
                   </li>
-                  <li className="nav-item  dropdown-hover">
-                    <a className="nav-link hover-line nav-font" href="#">
-                     Plant care
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      Plant care
                     </a>
-                    <ul className="dropdown-menu dropdown-menu01 dropdown-item01">
-                      <li>
-                        <a className="dropdown-item dropdown-item01 " href="#">
-                          <span className="hover-line nav-font">Plant Action</span>
-                        </a>
-                      </li>
-                      <li>
-                      <a className="dropdown-item dropdown-item01 " href="#">
-                          <span className="hover-line nav-font">Plant Action</span>
-                        </a>
-                      </li>
-                    </ul>
                   </li>
-                  <li className="nav-item  dropdown-hover">
-                    <a className="nav-link hover-line nav-font" href="#">
-                      gifting
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      Gifting
                     </a>
-                    <ul className="dropdown-menu dropdown-menu01 dropdown-item01">
-                      <li>
-                        <a className="dropdown-item dropdown-item01 " href="#">
-                          <span className="hover-line nav-font">Plant Action</span>
-                        </a>
-                      </li>
-                      <li>
-                      <a className="dropdown-item dropdown-item01 " href="#">
-                          <span className="hover-line nav-font">Plant Action</span>
-                        </a>
-                      </li>
-                    </ul>
                   </li>
-                  <li className="nav-item ">
-                    <a className="nav-link nav-font hover-line" href="#">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
                       Blogs
                     </a>
                   </li>
-                  <li className="nav-item ">
-                    <a className="nav-link nav-font hover-line activegreen" href="#">
-                      Offer
+                  <li className="nav-item dropdown">
+                    <a
+                      className="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Offers
                     </a>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Another action
+                        </a>
+                      </li>
+                      <li>
+                        <hr className="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Something else here
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-      
                 </ul>
-
-                <form className="w-25" role="search">
-                  <div className="search-box w-100 mt-2 d-flex flex-nowrap border border-dark rounded-5">
-
                 <form
                   className="  w-25 d-none d-md-block"
                   role="search"
                 >
                   <div className="search-box w-100 mt-2  d-flex flex-nowrap border border-dark rounded-5">
-
                     <input
-                      className="form-control border-0 p-2 px-3 rounded-5 input-text"
+                      className="form-control  border-0  p-2 px-3 rounded-5 input-text  "
                       type="search"
                       placeholder="Search for plants, seeds and planters..."
                       aria-label="Search"
@@ -171,20 +130,20 @@ function Nav() {
             </div>
           </div>
           <form action="" className="d-block d-lg-none w-100 mx-4">
-            <div className="search-box w-100 mt-2 d-flex flex-nowrap border border-dark rounded-5">
-              <input
-                className="form-control border-0 p-2 px-3 rounded-5 input-text"
-                type="search"
-                placeholder="Search for plants, seeds and planters..."
-                aria-label="Search"
-              />
-              <i className="fa-solid fa-magnifying-glass text-success"></i>
-            </div>
+          <div className="search-box w-100 mt-2  d-flex flex-nowrap border border-dark rounded-5">
+                    <input
+                      className="form-control  border-0  p-2 px-3 rounded-5 input-text  "
+                      type="search"
+                      placeholder="Search for plants, seeds and planters..."
+                      aria-label="Search"
+                    />
+                    <i className="fa-solid fa-magnifying-glass text-success"></i>
+                  </div>
           </form>
         </nav>
       </section>
     </div>
-  );
+  )
 }
 
-export default Nav;
+export default Nav
