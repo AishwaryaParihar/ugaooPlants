@@ -15,7 +15,7 @@ function Shopthelook() {
       </div>
 
       <div className="look-img-box">
-      <img src={lookimg} alt="" className="look-img" />
+      <img src={lookimg} alt="" className="look-img img-fluid" />
             </div>
 
     </div>

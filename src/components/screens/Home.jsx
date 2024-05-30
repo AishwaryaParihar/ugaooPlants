@@ -11,6 +11,7 @@ function Home() {
       {/* <Offers></Offers> */}
       <Bestseller></Bestseller>
       <Shopthelook></Shopthelook>
+
     </div>
   )
 }

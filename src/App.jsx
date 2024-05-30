@@ -13,6 +13,7 @@ function App() {
       <Nav/>
     </header>
     <main>
+   
       <Home/>
     </main>
      <footer>
