@@ -24,10 +24,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.38",
-<<<<<<< HEAD
-=======
-    "tailwindcss": "^3.4.3",
->>>>>>> b0abf075ea993c1cf90fc62bf9f6ab5b45ed8a2e
     "vite": "^5.2.0"
   }
 }
