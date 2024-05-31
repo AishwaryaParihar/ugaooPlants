@@ -6,13 +6,13 @@ import Shopthelook from './homeComponents/Shopthelook.jsx'
 import DealOfTheWee from './homeComponents/DealOfTheWee.jsx'
 import WhyUgao from './homeComponents/WhyUgao.jsx'
 import Youtube from './homeComponents/Youtube.jsx'
-import DealOfTheWeek from './homeComponents/DealOfTheWee.jsx'
+// import DealOfTheWeek from './homeComponents/DealOfTheWee.jsx'
 
 
 function Home() {
   return (
     <div>
-      <Hero/>
+      {/* <Hero/> */}
       {/* <Offers></Offers> */}
       <Bestseller></Bestseller>
       <Shopthelook></Shopthelook>

@@ -27,8 +27,8 @@ function DealOfTheWeek() {
   };
 
   return (
-    <div>
-      <div className="container-fluid m-5">
+    <>
+      <div className="container-fluid p-5">
         <div className="row">
           <div className="col-md-6">
             <div className="img-dealImg">
@@ -44,7 +44,7 @@ function DealOfTheWeek() {
               />
             </div>
           </div>
-          <div className="col-md-6 ps-5">
+          <div className="col-md-6 ps-5 deal-of-the-week">
             <div className="deal-heading">
               <p className="fs-4 mb-0">Deal Of The Week</p>
               <h1 className="h2">
@@ -114,8 +114,8 @@ function DealOfTheWeek() {
                 </div>
               )}
             </div>
-            <div className="buy-product d-flex ">
-              <div className="count-product ">
+            <div className="buy-product  ">
+              <div className="count-product mb-3 ">
                 <button
                   className="btn minus border-0"
                   onClick={() => {
@@ -146,11 +146,14 @@ function DealOfTheWeek() {
                 Add to cart{" "}
               </button>
               </div>
+              <button type="button" class="btn border border-success text-success text-uppercase buy-it">buy it now</button>
+              <p className="buy-it mt-4 ">Gold Flame isn’t a name given lightly to this stunning Snake plant variety. Its green-yellow, rosette-shaped leaves make it seem as though a flame of yellow is emerging from the very depths of the dark abyss. Low maintenance and sleek, the Sansevieria Gold Flame makes for a brilliant indoor plant. </p>
+              <a href="" className="nolink">view full details</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
