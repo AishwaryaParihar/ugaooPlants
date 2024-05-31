@@ -7,18 +7,6 @@ function App() {
   return (
     <>
 
-      <header>
-        <Nav />
-      </header>
-      <main className="">
-        {/* <h2 className="">asdasd</h2> */}
-        <Home />
-      </main>
-
-      <footer>
-        <Footer />
-      </footer>
-
     <header>
       <Nav/>
     </header>
