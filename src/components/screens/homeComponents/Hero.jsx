@@ -150,7 +150,7 @@ function Hero() {
       {/* oofers section  */}
 
       {/* your best picks */}
-      <Container className="my-4">
+      <Container-fluid className="my-4">
         <div className="heading">
           <h2>Your Best Picks</h2>
         </div>
@@ -192,7 +192,7 @@ function Hero() {
             </a>
           </div>
         </Row>
-      </Container>
+      </Container-fluid>
     </div>
   );
 }
