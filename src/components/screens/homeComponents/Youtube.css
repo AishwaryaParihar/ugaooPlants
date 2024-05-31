@@ -1,0 +1,26 @@
+/* .youtube-vdo{
+    width: 98vw;
+    margin: 0px;
+    padding: 0px;
+    height: 60vh;
+    ;
+} */
+.yt-img-box{
+    width: 100vw;
+    padding: 0px;
+    margin-top: 12px;
+}
+.ytBtn{
+    width: 4.4%;
+    position: relative;
+    /* bottom: 350px; */
+    background-color: rgb(241, 240, 240);
+    border-radius: 7px;
+    transition: all .18s ease-in;
+}
+.image-container:hover{
+    .ytbtn{
+        transform: scale(1.1);
+       
+    }
+}
