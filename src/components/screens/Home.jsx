@@ -3,6 +3,7 @@ import Hero from './homeComponents/Hero'
 import Offers from './homeComponents/Offers'
 import Bestseller from './homeComponents/Bestseller'
 import Shopthelook from './homeComponents/Shopthelook.jsx'
+import WhyUgao from './homeComponents/WhyUgao.jsx'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       {/* <Offers></Offers> */}
       <Bestseller></Bestseller>
       <Shopthelook></Shopthelook>
+      <WhyUgao></WhyUgao>
 
     </div>
   )
