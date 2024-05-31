@@ -4,7 +4,7 @@ import Offers from "./homeComponents/Offers";
 import Bestseller from "./homeComponents/Bestseller";
 import Shopthelook from "./homeComponents/Shopthelook.jsx";
 import DealOfTheWee from "./homeComponents/DealOfTheWee.jsx";
-import WhyUgao from "./homeComponents/Whyugao.jsx";
+import WhyUgao from "./homeComponents/WhyUgao.jsx";
 
 function Home() {
   return (
