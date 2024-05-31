@@ -8,19 +8,42 @@
 .yt-img-box{
     width: 100vw;
     padding: 0px;
-    margin-top: 12px;
+   
 }
-.ytBtn{
+.btn-yt{
     width: 4.4%;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 49%;
     /* bottom: 350px; */
     background-color: rgb(241, 240, 240);
     border-radius: 7px;
     transition: all .18s ease-in;
+    cursor: pointer;
 }
+
+
+
 .image-container:hover{
-    .ytbtn{
+    .btn-yt{
         transform: scale(1.1);
        
     }
+}
+
+.yt-vdo{
+    width: 100vw;
+    padding: 0px;
+
+    top: 0%;
+    left: 0%;
+    height: 75.9vh;
+}
+
+.Experience-box{
+max-height: 50%;
+}
+.para{
+    width: 60%;
+ margin: auto;
 }
