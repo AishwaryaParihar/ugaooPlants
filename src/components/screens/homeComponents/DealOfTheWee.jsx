@@ -117,7 +117,7 @@ function DealOfTheWeek() {
             <div className="buy-product  ">
               <div className="count-product mb-3 ">
                 <button
-                  className="btn minus border-0"
+                  className="btn minus border-0 "
                   onClick={() => {
                     if (count > 1) {
                       setCount(count - 1);
@@ -148,7 +148,14 @@ function DealOfTheWeek() {
               </div>
               <button type="button" class="btn border border-success text-success text-uppercase buy-it">buy it now</button>
               <p className="buy-it mt-4 ">Gold Flame isn’t a name given lightly to this stunning Snake plant variety. Its green-yellow, rosette-shaped leaves make it seem as though a flame of yellow is emerging from the very depths of the dark abyss. Low maintenance and sleek, the Sansevieria Gold Flame makes for a brilliant indoor plant. </p>
-              <a href="" className="nolink">view full details</a>
+              <a href="" className="nolink text-decoration-underline text-uppercase">view full details <i class="fa-solid fa-arrow-right-long"></i></a>
+              <div className="social-media-link d-flex justify-content-between mt-4 buy-it">
+                <span><i class="fa-brands fa-facebook"></i> Share</span>
+                <span><i class="fa-brands fa-x-twitter"></i> Tweet</span>
+                <span> <i class="fa-brands fa-pinterest"></i> Pin it</span>
+                <span> <i class="fa-solid fa-envelope"></i> Mail</span>
+                <span> <i class="fa-brands fa-whatsapp"></i> Whatsapp</span>
+              </div>
             </div>
           </div>
         </div>

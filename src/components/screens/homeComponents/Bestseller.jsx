@@ -40,7 +40,7 @@ const products = [
 function Bestseller() {
   return (
     <div>
-      <Container>
+      <div className="container-fluid p-5">
         <div className="heading">
           <h2>
             <img src={bestSeller} alt="" className="seller-best " /> Bestsellers
@@ -99,7 +99,7 @@ function Bestseller() {
             </Button>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

@@ -54,7 +54,8 @@ color: black;
   display: inline-block;
   border: 1px solid #ddd;
 }
-/* .add-cart-btn{
+
+.add-cart-btn{
   width: 44%;
 }
 .noOfProduct{
@@ -62,4 +63,4 @@ color: black;
 }
 .buy-it{
 width: 64%;
-} */
+}
