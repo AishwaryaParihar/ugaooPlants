@@ -20,3 +20,47 @@
   text-decoration: none;
 color: black;
 }
+.planter-options {
+  display: flex;
+}
+
+.planter-option {
+  cursor: pointer;
+  color: #114c36;
+  border: 1px solid #114c36;
+  padding: 6px;
+  margin-right: 8px;
+  border-radius: 5px;
+
+  transition: box-shadow 0.3s ease-in;
+}
+.planter-option:hover {
+  box-shadow: 0 0 0 1.5px #114c36 inset;
+}
+.color-options {
+  margin-top: 10px;
+}
+
+.color-option {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #ddd;
+}
+
+.add-cart-btn{
+  width: 44%;
+}
+.noOfProduct{
+  width: 10%;
+}
+.buy-it{
+width: 64%;
+}
