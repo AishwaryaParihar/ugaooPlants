@@ -126,12 +126,13 @@ function Hero() {
       {/* oofers section  */}
       <div className="bg-register">
         <Container>
-          <Row className="py-3 ">
+          <Row className="pt-3 ">
             <div className="col-md-6 d-flex justify-content-end">
               <div className="para h3">
                 <p>
-                  Spend a day immersed in nature with <br /> Ugaoo Farm Tours!!!
+                  Spend a day immersed in nature with 
                 </p>
+                <p>Ugaoo Farm Tours!!!</p>
                 <p> Registration is now open</p>
               </div>
             </div>
