@@ -5,12 +5,13 @@ import Bestseller from './homeComponents/Bestseller'
 import Shopthelook from './homeComponents/Shopthelook.jsx'
 import DealOfTheWee from './homeComponents/DealOfTheWee.jsx'
 import WhyUgao from './homeComponents/WhyUgao.jsx'
+import Youtube from './homeComponents/Youtube.jsx'
 
 
 function Home() {
   return (
     <div>
-      <Hero/>
+      {/* <Hero/> */}
       {/* <Offers></Offers> */}
       <Bestseller></Bestseller>
       <Shopthelook></Shopthelook>
@@ -19,6 +20,7 @@ function Home() {
     
 
       <WhyUgao></WhyUgao>
+      <Youtube></Youtube>
 
 
     </div>
