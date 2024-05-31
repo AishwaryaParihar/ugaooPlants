@@ -6,7 +6,7 @@ import Home from "./components/screens/Home";
 function App() {
   return (
     <>
-<<<<<<< HEAD
+
       <header>
         <Nav />
       </header>
@@ -18,7 +18,7 @@ function App() {
       <footer>
         <Footer />
       </footer>
-=======
+
     <header>
       <Nav/>
     </header>
@@ -30,7 +30,7 @@ function App() {
       <Footer/>
      </footer>
         
->>>>>>> b0abf075ea993c1cf90fc62bf9f6ab5b45ed8a2e
+
     </>
   );
 }
