@@ -7,6 +7,7 @@ import DealOfTheWee from './homeComponents/DealOfTheWee.jsx'
 import WhyUgao from './homeComponents/WhyUgao.jsx'
 import Youtube from './homeComponents/Youtube.jsx'
 import Bestpick from './homeComponents/Bestpick.jsx'
+import Review from './homeComponents/Review.jsx'
 // import DealOfTheWeek from './homeComponents/DealOfTheWee.jsx'
 
 
@@ -21,7 +22,7 @@ function Home() {
       <DealOfTheWee/>
       <WhyUgao></WhyUgao>
 <Youtube/>
-
+<Review></Review>
     </div>
   );
 }
