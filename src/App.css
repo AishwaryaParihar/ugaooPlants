@@ -56,11 +56,31 @@ color: black;
 }
 
 .add-cart-btn{
-  width: 44%;
+  width: 61%;
 }
 .noOfProduct{
   width: 10%;
 }
 .buy-it{
-width: 64%;
+width: 86%;
+}
+.minus-circle, .plus-circle {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #ddd;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out; 
+}
+
+.minus-circle:hover, .plus-circle:hover {
+  background-color: #171717; 
+  color: #ddd;
+}
+
+.minus-sign, .plus-sign {
+  font-size: 18px;
+  font-weight: bold;
 }

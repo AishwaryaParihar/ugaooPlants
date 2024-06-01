@@ -141,7 +141,7 @@ function Nav() {
                     </a>
                   </li>
       
-                </ul>
+                </ul>
                 <form
                   className="  w-25 d-none d-md-block"
                   role="search"

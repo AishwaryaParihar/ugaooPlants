@@ -3,9 +3,8 @@ import dealOne from "../../../assets/Deal1.webp";
 import { Badge } from "react-bootstrap";
 
 function DealOfTheWeek() {
-  let [count, setCount] = useState(1);
+  const [count, setCount] = useState(1);
   const [selectedPlanter, setSelectedPlanter] = useState("GroPot");
-  const [selectedColor, setSelectedColor] = useState("red");
   const [showColors, setShowColors] = useState(true);
 
   const planters = [
@@ -22,10 +21,6 @@ function DealOfTheWeek() {
     }
   };
 
-  const handleColorChange = (color) => {
-    setSelectedColor(color);
-  };
-
   return (
     <>
       <div className="container-fluid p-5">
@@ -36,11 +31,7 @@ function DealOfTheWeek() {
                 src={dealOne}
                 alt=""
                 className="img-fluid"
-                style={{
-                  borderColor: selectedColor,
-                  borderWidth: 2,
-                  borderStyle: "solid",
-                }}
+                
               />
             </div>
           </div>
@@ -61,9 +52,9 @@ function DealOfTheWeek() {
               <p className="text-success fs-4">
                 {" "}
                 <del className="text-secondary point12px">
-                  <i class="fa-solid fa-indian-rupee-sign point12px"></i> 749
+                  <i className="fa-solid fa-indian-rupee-sign point12px"></i> 749
                 </del>{" "}
-                <i class="fa-solid fa-indian-rupee-sign point12px"></i> 599{" "}
+                <i className="fa-solid fa-indian-rupee-sign point12px"></i> 599{" "}
                 <Badge
                   bg="warning"
                   text="dark"
@@ -99,8 +90,7 @@ function DealOfTheWeek() {
                       .colors.map((color) => (
                         <div
                           key={color}
-                          className="color-option  "
-                          onClick={() => handleColorChange(color)}
+                          className="color-option"
                         >
                           <div
                             className="color-swatch"
@@ -114,47 +104,90 @@ function DealOfTheWeek() {
                 </div>
               )}
             </div>
-            <div className="buy-product  ">
-              <div className="count-product mb-3 ">
+            <div className="buy-product">
+              <div className="count-product mb-3">
                 <button
-                  className="btn minus border-0 "
+                  className="btn minus border-0"
                   onClick={() => {
                     if (count > 1) {
                       setCount(count - 1);
                     }
                   }}
                 >
-                  {" "}
-                  -{" "}
+                  <span className="minus-circle">
+                    <span className="minus-sign">-</span>
+                  </span>
                 </button>
                 <input
                   type="text"
                   aria-label="First name"
-                  className="text-center noOfProduct border-0 "
+                  className="text-center noOfProduct border-0"
                   value={count}
                   onChange={(e) => setCount(parseInt(e.target.value))}
                 />
                 <button
-                  className="btn  plus  border-0"
+                  className="btn plus border-0"
                   onClick={() => setCount(count + 1)}
                 >
-                  {" "}
-                  +{" "}
+                  <span className="plus-circle">
+                    <span className="plus-sign">+</span>
+                  </span>
                 </button>
                 <button className="btn btn-success text-uppercase add-cart-btn">
-                {" "}
-                Add to cart{" "}
-              </button>
+                  {" "}
+                  Add to cart{" "}
+                </button>
               </div>
-              <button type="button" class="btn border border-success text-success text-uppercase buy-it">buy it now</button>
-              <p className="buy-it mt-4 ">Gold Flame isn’t a name given lightly to this stunning Snake plant variety. Its green-yellow, rosette-shaped leaves make it seem as though a flame of yellow is emerging from the very depths of the dark abyss. Low maintenance and sleek, the Sansevieria Gold Flame makes for a brilliant indoor plant. </p>
-              <a href="" className="nolink text-decoration-underline text-uppercase">view full details <i class="fa-solid fa-arrow-right-long"></i></a>
+              <button
+                type="button"
+                className="btn border border-success text-success text-uppercase buy-it"
+              >
+                buy it now
+              </button>
+              <p className="buy-it mt-4 ">
+                Gold Flame isn’t a name given lightly to this stunning Snake
+                plant variety. Its green-yellow, rosette-shaped leaves make it
+                seem as though a flame of yellow is emerging from the very
+                depths of the dark abyss. Low maintenance and sleek, the
+                Sansevieria Gold Flame makes for a brilliant indoor plant.{" "}
+              </p>
+              <a
+                href=""
+                className="nolink text-decoration-underline text-uppercase"
+              >
+                view full details <i className="fa-solid fa-arrow-right-long"></i>
+              </a>
               <div className="social-media-link d-flex justify-content-between mt-4 buy-it">
-                <span><i class="fa-brands fa-facebook"></i> Share</span>
-                <span><i class="fa-brands fa-x-twitter"></i> Tweet</span>
-                <span> <i class="fa-brands fa-pinterest"></i> Pin it</span>
-                <span> <i class="fa-solid fa-envelope"></i> Mail</span>
-                <span> <i class="fa-brands fa-whatsapp"></i> Whatsapp</span>
+                <a href="" className="nolink">
+                  <span>
+                    <i className="fa-brands fa-facebook"></i> Share
+                  </span>
+                </a>
+                <a href="" className="nolink">
+                  {" "}
+                  <span>
+                    <i className="fa-brands fa-x-twitter"></i> Tweet
+                  </span>
+                </a>
+                <a href="" className="nolink">
+                  <span>
+                    {" "}
+                    <i className="fa-brands fa-pinterest"></i> Pin it
+                  </span>
+                </a>
+                <a href="" className="nolink">
+                  {" "}
+                  <span>
+                    {" "}
+                    <i className="fa-solid fa-envelope"></i> Mail
+                  </span>
+                </a>
+                <a href="" className="nolink">
+                  <span>
+                    {" "}
+                    <i className="fa-brands fa-whatsapp"></i> Whatsapp
+                  </span>
+                </a>
               </div>
             </div>
           </div>
