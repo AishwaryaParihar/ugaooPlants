@@ -35,12 +35,27 @@ function Youtube() {
       {show && <iframe className="yt-vdo" style={{ position:'absolute' }} width="560" height="315" src="https://www.youtube.com/embed/Xq2iDxLWgB0?si=KDLDGS_u7gPvfzgs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> }
     </div>
 
-   <div className="container-fluid text-center Experience-box my-2">
+   {/* <div className="container-fluid text-center Experience-box my-2">
       <h1 className="heading02 my-4">Experience the magic of growing plants</h1>
  <div className="para my-3">
  <p className="fs-5" >Ugaoo is here to inspire you to have plants around you. To look at life in a very different way, helping you connect with nature. Each plant you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</p>
  </div>
-   </div>
+   </div> */}
+
+
+<div className="custom-rich-text text-center">
+
+  <div className="page-width">
+    
+  <h1 className="heading02 my-4 px-1">Experience the magic of growing plants</h1>
+    <p className="fs-5" >Ugaoo is here to inspire you to have plants around you. To look at life in a very different way, helping you connect with nature. Each plant you buy is packed and shipped with care, from our 25-acre farm to your doorstep.</p>
+    
+    
+  </div>
+
+</div>
+
+
     </>
   );
 }
