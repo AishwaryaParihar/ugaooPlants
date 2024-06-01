@@ -10,7 +10,6 @@ import Bestpick from './homeComponents/Bestpick.jsx'
 import Review from './homeComponents/Review.jsx'
 // import DealOfTheWeek from './homeComponents/DealOfTheWee.jsx'
 
-
 function Home() {
   return (
     <div>
@@ -23,6 +22,8 @@ function Home() {
       <WhyUgao></WhyUgao>
 <Youtube/>
 <Review></Review>
+
+
     </div>
   );
 }
