@@ -7,18 +7,18 @@ function App() {
   return (
     <>
 
-<<<<<<< HEAD
+
     <header>
       <Nav/>
     </header>
-=======
+
       <header>
         <Nav />
       </header>
      
 
       
->>>>>>> 03eae8ab579cdaa902c80bef96770cb1a7a1eafa
+
     <main>
    
       <Home/>
