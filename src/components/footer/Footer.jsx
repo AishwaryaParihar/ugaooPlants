@@ -13,9 +13,6 @@ function Footer() {
   ];
   return (
     <>
-    
-     
-    {/* why ugaoo  */}
 
     {/* marquee  */}
       <div className="marquee">

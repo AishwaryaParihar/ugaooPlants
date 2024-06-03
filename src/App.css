@@ -1,14 +1,14 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Outfit';
+  font-family: "Outfit";
 }
 .primarycolor {
   color: #114c36;
 }
-.bgprimary{
-  background-color: rgb(20,146,83);
+.bgprimary {
+  background-color: rgb(20, 146, 83);
 }
 .point12px {
   font-size: 0.8rem;
@@ -16,9 +16,13 @@
 .fwbold {
   font-weight: 600;
 }
-.nolink{
+.nolink {
   text-decoration: none;
-color: black;
+  color: black;
+}
+.imgHero {
+  height: 45vh;
+  width: 100%;
 }
 .planter-options {
   display: flex;
@@ -65,8 +69,7 @@ color: black;
   height: 25px;
   border-radius: 50%;
   cursor: pointer;
-  transition: transform .4s ease-in;
-
+  transition: transform 0.4s ease-in;
 }
 .color-radio:hover {
   transform: scale(1.2);
@@ -74,16 +77,17 @@ color: black;
 .color-radio:checked + .color-swatch-label {
   border: 2px solid #000;
 }
-.add-cart-btn{
+.add-cart-btn {
   width: 61%;
 }
-.noOfProduct{
+.noOfProduct {
   width: 10%;
 }
-.buy-it{
-width: 86%;
+.buy-it {
+  width: 86%;
 }
-.minus-circle, .plus-circle {
+.minus-circle,
+.plus-circle {
   border-radius: 50%;
   width: 25px;
   height: 25px;
@@ -91,30 +95,32 @@ width: 86%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
 }
 
-.minus-circle:hover, .plus-circle:hover {
-  background-color: #171717; 
+.minus-circle:hover,
+.plus-circle:hover {
+  background-color: #171717;
   color: #ddd;
 }
 
-.minus-sign, .plus-sign {
+.minus-sign,
+.plus-sign {
   font-size: 18px;
   font-weight: bold;
 }
 .productPot-carousel {
   .carousel-control-prev {
-    right: 80px; 
+    right: 80px;
     left: auto;
   }
 
   .carousel-control-next {
-    right: 10px; 
+    right: 10px;
   }
   .carousel-control-prev,
   .carousel-control-next {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -133,13 +139,13 @@ width: 86%;
   @media (max-width: 767px) {
     .carousel-control-prev,
     .carousel-control-next {
-      top: 80%; 
+      top: 80%;
       width: 30px;
       height: 30px;
     }
 
     .carousel-control-prev {
-      right: 60px; 
+      right: 60px;
       left: auto;
     }
 
@@ -148,11 +154,11 @@ width: 86%;
     }
   }
 }
-.social-media-link a span  {
-text-decoration: underline;
-text-decoration-color: #a9a9a9;
-text-decoration-thickness: 1px;
-text-underline-offset: 4px;
+.social-media-link a span {
+  text-decoration: underline;
+  text-decoration-color: #a9a9a9;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .social-media-link a span:hover {

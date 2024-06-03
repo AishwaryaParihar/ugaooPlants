@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from "../../assets/greenlogo.png";
 import './nav.css'
+import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <div>
@@ -46,9 +47,9 @@ function Nav() {
               <div className="offcanvas-body">
               <ul className="navbar-nav  navbar-nav01 justify-content-center flex-grow-1 text-uppercase point12px fwbold mt-2">
                   <li className="nav-item dropdown-hover">
-                    <a className="nav-link hover-line nav-font" aria-current="page" href="#">
+                    <Link className="nav-link hover-line nav-font" aria-current="page" to="/">
                       plants
-                    </a>
+                    </Link>
                     <ul className="dropdown-menu dropdown-menu01 dropdown-item01">
                       <li>
                         <a className="dropdown-item dropdown-item01 " href="#">
@@ -63,9 +64,9 @@ function Nav() {
                     </ul>
                   </li>
                   <li className="nav-item  dropdown-hover">
-                    <a className="nav-link hover-line nav-font" href="#">
+                    <Link className="nav-link hover-line nav-font" to="/seeds">
                       seeds
-                    </a>
+                    </Link>
                     <ul className="dropdown-menu dropdown-menu01 dropdown-item01">
                       <li>
                         <a className="dropdown-item dropdown-item01 " href="#">
@@ -176,6 +177,7 @@ function Nav() {
                   </div>
           </form>
         </nav>
+      
       </section>
     </div>
   )

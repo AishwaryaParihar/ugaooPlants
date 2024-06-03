@@ -23,7 +23,7 @@ function DealOfTheWeek() {
     { name: "GroPot", colors: ["Ivory"] },
     {
       name: "Krish",
-      colors: ["Ivory", "White", "Red", "Light green", "Brown", "Yellow"],
+      colors: ["Ivory", "White", "Red", "Green", "Brown", "Yellow"],
     },
     { name: "Grail", colors: ["White", "Bisque"] },
   ];
@@ -32,7 +32,7 @@ function DealOfTheWeek() {
     "Ivory": [ivory, slide1, slide2, slide3, slide4],
     "White": [white, slide2, slide3, slide4],
     "Red": [red, slide1, slide2, slide3, slide4],
-    "Light green": [green, slide2, slide3],
+    "Green": [green, slide2, slide3],
     "Brown": [brown, slide1, slide3],
     "Yellow": [yellow, slide2, slide3],
     "Bisque": [spiroyellow, slide1, slide2],
