@@ -2,11 +2,12 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import plantImage from "../../../assets/Ceramic_Pots_2.webp";
+
 import "./hero.css";
 function Hero() {
   return (
     <div>
-      <Carousel>
+      <Carousel className="custom-carousel" indicators={false}>
         <Carousel.Item interval={1000}>
           {/* <ExampleCarouselImage text="First slide"   /> */}
           <div className="img"></div>

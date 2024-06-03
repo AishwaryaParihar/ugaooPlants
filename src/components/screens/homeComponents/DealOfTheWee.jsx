@@ -1,24 +1,48 @@
 import React, { useState } from "react";
 import dealOne from "../../../assets/Deal1.webp";
-import { Badge } from "react-bootstrap";
+import deal2 from "../../../assets/DSC1.webp";
+import deal3 from "../../../assets/DSC2.webp";
+import deal4 from "../../../assets/DSC3.webp";
+import { Badge, OverlayTrigger, Tooltip, Carousel } from "react-bootstrap";
 
 function DealOfTheWeek() {
   const [count, setCount] = useState(1);
   const [selectedPlanter, setSelectedPlanter] = useState("GroPot");
+  const [selectedColor, setSelectedColor] = useState("Ivory");
   const [showColors, setShowColors] = useState(true);
+  const [currentImage, setCurrentImage] = useState(dealOne); // state to manage current image
 
   const planters = [
-    { name: "GroPot", colors: ["red", "blue"] },
-    { name: "Krish", colors: ["Pink", "peach", "green", "yellow", "purple"] },
-    { name: "Grail", colors: ["black"] },
+    { name: "GroPot", colors: ["Ivory"] },
+    {
+      name: "Krish",
+      colors: ["Ivory", "White", "Red", "Light green", "Brown", "Yellow"],
+    },
+    { name: "Grail", colors: ["White", "Bisque"] },
   ];
+
+  const colorToImageMap = {
+    "Ivory": dealOne,
+    "White": deal2,
+    "Red": deal3,
+    "Light green": deal4,
+    "Brown": deal2,
+    "Yellow": deal3,
+    "Bisque": deal4,
+  };
 
   const handlePlanterChange = (planter) => {
     const existingPlanter = planters.find((p) => p.name === planter);
     if (existingPlanter) {
       setSelectedPlanter(planter);
+      setSelectedColor("");
       setShowColors(true);
     }
+  };
+
+  const handleColorChange = (color) => {
+    setSelectedColor(color);
+    setCurrentImage(colorToImageMap[color]);
   };
 
   return (
@@ -27,12 +51,27 @@ function DealOfTheWeek() {
         <div className="row">
           <div className="col-md-6">
             <div className="img-dealImg">
-              <img
-                src={dealOne}
-                alt=""
-                className="img-fluid"
-                
-              />
+              <Carousel
+                className="productPot-carousel"
+                indicators={false}
+                interval={null}
+                nextIcon={
+                  <span
+                    className={`custom-next-icon fa-solid fa-arrow-right`}
+                  ></span>
+                }
+                prevIcon={
+                  <span
+                    className={`custom-prev-icon fa-solid fa-arrow-left`}
+                  ></span>
+                }
+              >
+                <Carousel.Item>
+                  <img src={currentImage} alt="" className="img-fluid" />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+                {/* You can add more Carousel.Items if needed */}
+              </Carousel>
             </div>
           </div>
           <div className="col-md-6 ps-5 deal-of-the-week">
@@ -52,7 +91,8 @@ function DealOfTheWeek() {
               <p className="text-success fs-4">
                 {" "}
                 <del className="text-secondary point12px">
-                  <i className="fa-solid fa-indian-rupee-sign point12px"></i> 749
+                  <i className="fa-solid fa-indian-rupee-sign point12px"></i>{" "}
+                  749
                 </del>{" "}
                 <i className="fa-solid fa-indian-rupee-sign point12px"></i> 599{" "}
                 <Badge
@@ -70,7 +110,9 @@ function DealOfTheWeek() {
                 {planters.map((planter) => (
                   <div
                     key={planter.name}
-                    className="planter-option"
+                    className={`planter-option ${
+                      planter.name === selectedPlanter ? "selected" : ""
+                    }`}
                     onClick={() => handlePlanterChange(planter.name)}
                   >
                     {planter.name}
@@ -79,28 +121,50 @@ function DealOfTheWeek() {
               </div>
               {showColors && (
                 <div className="color-options">
-                  <h6>
-                    Color- <span className="text-secondary">Ivory</span>
+                  <h6 className="mt-2">
+                    Color-{" "}
+                    <span className="text-secondary">
+                      {selectedColor || "Ivory"}
+                    </span>
                   </h6>
-                  {planters.find(
-                    (planter) => planter.name === selectedPlanter
-                  ) ? (
-                    planters
-                      .find((planter) => planter.name === selectedPlanter)
-                      .colors.map((color) => (
-                        <div
-                          key={color}
-                          className="color-option"
-                        >
-                          <div
-                            className="color-swatch"
-                            style={{ backgroundColor: color }}
-                          ></div>
-                        </div>
-                      ))
-                  ) : (
-                    <div>No colors available</div>
-                  )}
+                  <div className="d-flex flex-wrap">
+                    {planters.find(
+                      (planter) => planter.name === selectedPlanter
+                    ) ? (
+                      planters
+                        .find((planter) => planter.name === selectedPlanter)
+                        .colors.map((color) => (
+                          <OverlayTrigger
+                            key={color}
+                            placement="top"
+                            overlay={
+                              <Tooltip id={`tooltip-${color}`}>{color}</Tooltip>
+                            }
+                          >
+                            <div key={color} className="form-check me-3">
+                              <input
+                                className="form-check-input color-radio border "
+                                type="radio"
+                                name="colorOptions"
+                                id={`color-${color}`}
+                                value={color}
+                                checked={selectedColor === color}
+                                onChange={() => handleColorChange(color)}
+                                style={{ backgroundColor: color }}
+                              />
+                              <br />
+                              <label
+                                className="form-check-label color-swatch-label"
+                                htmlFor={`color-${color}`}
+                                style={{ backgroundColor: color }}
+                              ></label>
+                            </div>
+                          </OverlayTrigger>
+                        ))
+                    ) : (
+                      <div>No colors available</div>
+                    )}
+                  </div>
                 </div>
               )}
             </div>
@@ -155,7 +219,8 @@ function DealOfTheWeek() {
                 href=""
                 className="nolink text-decoration-underline text-uppercase"
               >
-                view full details <i className="fa-solid fa-arrow-right-long"></i>
+                view full details{" "}
+                <i className="fa-solid fa-arrow-right-long"></i>
               </a>
               <div className="social-media-link d-flex justify-content-between mt-4 buy-it">
                 <a href="" className="nolink">
