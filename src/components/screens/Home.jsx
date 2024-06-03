@@ -8,6 +8,8 @@ import WhyUgao from './homeComponents/WhyUgao.jsx'
 import Youtube from './homeComponents/Youtube.jsx'
 import Bestpick from './homeComponents/Bestpick.jsx'
 import Review from './homeComponents/Review.jsx'
+import PlantSubscription from './homeComponents/PlantSubscription.jsx'
+import About from './homeComponents/About.jsx'
 // import DealOfTheWeek from './homeComponents/DealOfTheWee.jsx'
 
 function Home() {
@@ -21,7 +23,9 @@ function Home() {
       <DealOfTheWee/>
       <WhyUgao></WhyUgao>
 <Youtube/>
+<PlantSubscription/>
 <Review></Review>
+<About/>
 
 
     </div>

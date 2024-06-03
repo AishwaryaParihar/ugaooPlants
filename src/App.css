@@ -148,3 +148,15 @@ width: 86%;
     }
   }
 }
+.social-media-link a span  {
+text-decoration: underline;
+text-decoration-color: #a9a9a9;
+text-decoration-thickness: 1px;
+text-underline-offset: 4px;
+}
+
+.social-media-link a span:hover {
+  text-decoration: underline;
+  text-decoration-color: #000000;
+  text-decoration-thickness: 1px;
+}

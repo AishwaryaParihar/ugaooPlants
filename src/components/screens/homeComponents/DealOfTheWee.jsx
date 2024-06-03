@@ -1,8 +1,15 @@
 import React, { useState } from "react";
-import dealOne from "../../../assets/Deal1.webp";
-import deal2 from "../../../assets/DSC1.webp";
-import deal3 from "../../../assets/DSC2.webp";
-import deal4 from "../../../assets/DSC3.webp";
+import slide1 from "../../../assets/Deal1.webp";
+import slide2 from "../../../assets/DSC1.webp";
+import slide3 from "../../../assets/DSC2.webp";
+import slide4 from "../../../assets/DSC3.webp";
+import ivory from "../../../assets/ivoryp.webp";
+import white from "../../../assets/DSC1.webp";
+import red from "../../../assets/redp.webp";
+import green from "../../../assets/greenp.webp";
+import brown from "../../../assets/brownp.webp";
+import yellow from "../../../assets/yellowp.webp";
+import spiroyellow from "../../../assets/spriroyellow.webp";
 import { Badge, OverlayTrigger, Tooltip, Carousel } from "react-bootstrap";
 
 function DealOfTheWeek() {
@@ -10,7 +17,7 @@ function DealOfTheWeek() {
   const [selectedPlanter, setSelectedPlanter] = useState("GroPot");
   const [selectedColor, setSelectedColor] = useState("Ivory");
   const [showColors, setShowColors] = useState(true);
-  const [currentImage, setCurrentImage] = useState(dealOne); // state to manage current image
+  const [currentImages, setCurrentImages] = useState([white]); // state to manage current images
 
   const planters = [
     { name: "GroPot", colors: ["Ivory"] },
@@ -22,27 +29,28 @@ function DealOfTheWeek() {
   ];
 
   const colorToImageMap = {
-    "Ivory": dealOne,
-    "White": deal2,
-    "Red": deal3,
-    "Light green": deal4,
-    "Brown": deal2,
-    "Yellow": deal3,
-    "Bisque": deal4,
+    "Ivory": [ivory, slide1, slide2, slide3, slide4],
+    "White": [white, slide2, slide3, slide4],
+    "Red": [red, slide1, slide2, slide3, slide4],
+    "Light green": [green, slide2, slide3],
+    "Brown": [brown, slide1, slide3],
+    "Yellow": [yellow, slide2, slide3],
+    "Bisque": [spiroyellow, slide1, slide2],
   };
 
   const handlePlanterChange = (planter) => {
     const existingPlanter = planters.find((p) => p.name === planter);
     if (existingPlanter) {
       setSelectedPlanter(planter);
-      setSelectedColor("");
+      setSelectedColor("Ivory");
       setShowColors(true);
+      setCurrentImages(colorToImageMap["Ivory"]);
     }
   };
 
   const handleColorChange = (color) => {
     setSelectedColor(color);
-    setCurrentImage(colorToImageMap[color]);
+    setCurrentImages(colorToImageMap[color]);
   };
 
   return (
@@ -66,15 +74,16 @@ function DealOfTheWeek() {
                   ></span>
                 }
               >
-                <Carousel.Item>
-                  <img src={currentImage} alt="" className="img-fluid" />
-                  <Carousel.Caption></Carousel.Caption>
-                </Carousel.Item>
-                {/* You can add more Carousel.Items if needed */}
+                {currentImages.map((image, index) => (
+                  <Carousel.Item key={index}>
+                    <img src={image} alt="" className="img-fluid" />
+                    <Carousel.Caption></Carousel.Caption>
+                  </Carousel.Item>
+                ))}
               </Carousel>
             </div>
           </div>
-          <div className="col-md-6 ps-5 deal-of-the-week">
+          <div className="col-md-6  ps-md-5 deal-of-the-week">
             <div className="deal-heading">
               <p className="fs-4 mb-0">Deal Of The Week</p>
               <h1 className="h2">

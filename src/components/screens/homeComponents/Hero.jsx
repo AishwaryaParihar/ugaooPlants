@@ -60,14 +60,14 @@ function Hero() {
       {/* oofers section  */}
       <div className="bg-warning">
         <Container>
-          <Row className="pt-3">
-            <div className="col-md-7 d-flex justify-content-end">
+          <Row className="py-3">
+            <div className="col-md-8 d-flex justify-content-end">
               <div className="para h3">
                 <p>Our very new shades of green.</p>
                 <p>Check out our latest sales and offers.</p>
               </div>
             </div>
-            <div className="col-md-5 d-flex justify-content-center justify-content-md-start align-items-center ">
+            <div className="col-md-4 d-flex justify-content-center justify-content-md-start align-items-center ">
               <button
                 type="button"
                 className="btn btn-success text-uppercase px-5"
@@ -126,8 +126,8 @@ function Hero() {
       {/* oofers section  */}
       <div className="bg-register">
         <Container>
-          <Row className="pt-3 ">
-            <div className="col-md-7 d-flex justify-content-end">
+          <Row className="py-3 ">
+            <div className="col-md-8 d-flex justify-content-center justify-content-md-end">
               <div className="para h3">
                 <p>
                   Spend a day immersed in nature with 
@@ -136,7 +136,7 @@ function Hero() {
                 <p> Registration is now open</p>
               </div>
             </div>
-            <div className="col-md-5 d-flex justify-content-center justify-content-md-start align-items-center ">
+            <div className="col-md-4 d-flex justify-content-center justify-content-md-start align-items-center ">
               <button
                 type="button"
                 className="btn btn-success text-uppercase px-5"
