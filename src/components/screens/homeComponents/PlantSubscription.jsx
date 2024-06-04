@@ -15,7 +15,7 @@ function PlantSubscription() {
                     <h2>Plant Subscriptions</h2>
                     <p className='text-secondary fs-5'>Receive a curated box of handpicked plants, packaged with care, every month.</p>
                     <div className="gap-4">
-                    <button className="btn btn-success border border-success border-2 text-uppercase px-5 me-4">Explore Boxes</button>
+                    <button className="btn btn-success border-success border-2 text-uppercase px-5 me-4">Explore Boxes</button>
                     
                     </div>
                 </div>

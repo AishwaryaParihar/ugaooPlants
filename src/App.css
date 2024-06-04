@@ -24,6 +24,17 @@
   height: 45vh;
   width: 100%;
 }
+.seed-text{
+  text-decoration: underline;
+  text-decoration-color: #a9a9a9;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+.seed-text:hover{
+  text-decoration: underline;
+  text-decoration-color: #000000;
+  text-decoration-thickness: 1px;
+}
 .planter-options {
   display: flex;
 }
