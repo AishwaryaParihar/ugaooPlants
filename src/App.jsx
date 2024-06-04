@@ -6,6 +6,7 @@ import Nav from "./components/navbar/Nav";
 import Home from "./components/screens/Home";
 import SignIn from "./components/screens/SignIn";
 import SeedsHero from "./components/screens/SeedsComponents/SeedsHero";
+import SignUp from "./components/screens/SignUp";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/seeds" element={<SeedsHero />} />
           <Route path="/signin" element={<SignIn/>} />
+          <Route path="/signup" element={<SignUp/>} />
         </Routes>
 
        

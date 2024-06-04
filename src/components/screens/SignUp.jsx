@@ -5,11 +5,15 @@ import { Link } from 'react-router-dom'
 
 
 
-function SignIn() {
+function SignUp() {
    const [showPassword, setShowPassword] = useState(false)
+   const [showConfirmPassword , setShowConfirmPassword] = useState(false)
    const [data,setData]= useState({
     email : "",
-    password : ""
+    password : "",
+    name : "",
+    confirmPassword : "",
+    
    })
 
    const handleOnChange = (e) => {
@@ -34,18 +38,34 @@ function SignIn() {
             
         <div className="form-container bg-white border rounded-4 p-4 m-4 form-cont01 shadow">
           <h2 className="form-title text-center card-heading ">
-            <span className="about-text">Sign in </span>
+            <span className="about-text">Sign Up</span>
           </h2>
           <form onSubmit={handleSubmit}>
+          <div className="mb-3"> 
+              <label for="name" className="form-label input-headings">
+               Name 
+              </label>
+      <input
+                type="text"
+                className="form-control input-custom"
+                id="name"
+                name="name"
+                value={data.name}
+                required
+                onChange={handleOnChange}
+                placeholder="Enter your name "
+              />
+            </div>
           <div className="mb-3"> 
               <label for="email" className="form-label input-headings">
                Email Id
               </label>
-              <input
+      <input
                 type="email"
                 className="form-control input-custom"
-                id="email"
+                id="emial"
                 name="email"
+                required
                 value={data.email}
                 onChange={handleOnChange}
                 placeholder="Enter your Email id"
@@ -55,13 +75,14 @@ function SignIn() {
               <label for="pswd" className="form-label input-headings">
                 Password
               </label>
-             <div className="input-password d-flex border rounded">
+        <div className="input-password d-flex border rounded">
              <input
                 type={showPassword ? "" : "password"} 
                 className="form-control input-custom border-0"
                 id="pswd"
                 name='password'
                 value={data.password}
+                required
                 onChange={handleOnChange}
                 placeholder="Enter your password"
               />
@@ -84,11 +105,42 @@ function SignIn() {
              </div>
             </div>
             <div className="mb-3">
+              <label for="pswd" className="form-label input-headings">
+                Confirm Password
+              </label>
+        <div className="input-password d-flex border rounded">
+             <input
+                type={showConfirmPassword ? "" : "password"} 
+                className="form-control input-custom border-0"
+                id="pswd"
+                name='password'
+                value={data.password}
+                required 
+                onChange={handleOnChange}
+                placeholder="Enter your password"
+              />
+              <div className='cursor-pointer px-1 mt-2 bg-white' onClick={()=> setShowConfirmPassword((preve)=> !preve)}>
+                <span>
+                   {
+                    showConfirmPassword   ? (
+                      <i class="fa-solid fa-eye-slash"></i>
+                    )
+                    : 
+                    (
+                      <i class="fa-regular fa-eye"></i>
+                    )
+                   }
+
+
+                
+                </span>
+              </div>
+             </div>
+            </div>
+            <div className="mb-3">
               <label for="checkbox" className="form-label input-headings">
               {/* <input className="form-check-input " type="checkbox" value="" aria-label="Checkbox for following text input"/> */}
-              <div className='text-end'>
-                <Link className='  text-success'>Forgot Password </Link>
-              </div>
+            
               </label>
              
             </div>
@@ -105,4 +157,4 @@ function SignIn() {
   )
 }
 
-export default SignIn
+export default SignUp
