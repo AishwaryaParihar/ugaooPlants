@@ -49,7 +49,7 @@ function Bestseller() {
         <div className="row">
           {products.map((product) => (
             <div className="col-6 col-md-3">
-              <Card className="border border-0">
+              <Card className=" border-0">
                 <a href="" className="nolink">
                   <div className="textdecor position-relative">
                     <img src={bestPicks} alt="" className="bextpick" />
