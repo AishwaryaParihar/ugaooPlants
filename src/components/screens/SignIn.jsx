@@ -5,8 +5,8 @@ function SignIn() {
     
   return (
     <div>
-        <h2 className="text-center bg-primary m-0 pt-4 text-light text-underline">Aniket Enterprises</h2>
-        <div className="container-fluid d-flex justify-content-center align-item-center bg-primary form-cont" >
+        <h2 className="text-center bg-success m-0 pt-4 text-light text-underline">Aniket Enterprises</h2>
+        <div className="container-fluid d-flex justify-content-center align-item-center bg-success form-cont" >
             
         <div className="form-container bg-white border rounded-4 p-4 m-4 form-cont01">
           <h2 className="form-title text-center card-heading">
@@ -44,7 +44,7 @@ function SignIn() {
             </div>
             
 
-            <button type="submit" className="btn btn-custom btn-primary w-100">
+            <button type="submit" className="btn btn-custom btn-success w-100">
               Submit
             </button>
           </form>
