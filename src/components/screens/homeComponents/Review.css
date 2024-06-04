@@ -1,0 +1,67 @@
+.swiper-box {
+  margin: auto;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  padding: 0;
+  /* margin: 10% 0px; */
+}
+
+.para-box {
+  /* Add any specific styles for .para-box if needed */
+}
+
+.swiper-slide {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+
+.slide-content {
+  display: none;
+}
+
+.swiper-slide.swiper-slide-active .slide-content {
+  display: block;
+}
+
+.customer-img {
+  border-radius: 12px;
+  margin-bottom: 15%;
+  width: 15%;
+  height: auto;
+}
+
+.para-font {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    padding: 0 10px;
+  }
+  .para-font {
+    width: 90%;
+  }
+  .swiper-box {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-slide {
+    padding: 0 5px;
+  }
+  .para-font {
+    width: 100%;
+  }
+  .swiper-box {
+    padding: 0 10px;
+  }
+}

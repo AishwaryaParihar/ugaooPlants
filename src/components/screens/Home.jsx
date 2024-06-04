@@ -24,7 +24,7 @@ function Home() {
       <WhyUgao></WhyUgao>
 <Youtube/>
 <PlantSubscription/>
-<Review></Review>
+{/* <Review></Review> */}
 <About/>
 
 

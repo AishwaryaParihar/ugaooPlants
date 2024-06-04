@@ -16,7 +16,8 @@
     "react-dom": "^18.2.0",
     "react-fontawesome": "^1.7.1",
     "react-img-mapper": "^1.5.1",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
