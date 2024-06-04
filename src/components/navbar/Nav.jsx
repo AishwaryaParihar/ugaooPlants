@@ -159,7 +159,7 @@ function Nav() {
                 </form>
                 <div className="flex-nowrap d-none d-md-block">
                   <i className="fa-solid fa-indian-rupee-sign px-2 py-1 ms-4 border border-success rounded-circle text-success"></i>
-                  <i className="fa-regular fa-user p-3 text-success"></i>
+                  <Link to='/signin'> <i className="fa-regular fa-user p-3 text-success"></i></Link>
                   <i className="fa-solid fa-cart-shopping p-3 text-success"></i>
                 </div>
               </div>

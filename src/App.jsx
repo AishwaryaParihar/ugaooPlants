@@ -4,6 +4,7 @@ import img from "./assets/PPC.jpg";
 import Footer from "./components/footer/Footer";
 import Nav from "./components/navbar/Nav";
 import Home from "./components/screens/Home";
+import SignIn from "./components/screens/SignIn";
 import SeedsHero from "./components/screens/SeedsComponents/SeedsHero";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/seeds" element={<SeedsHero />} />
+          <Route path="/signin" element={<SignIn/>} />
         </Routes>
 
        

@@ -4,16 +4,16 @@ function SignIn() {
    
     
   return (
-    <div>
-        <h2 className="text-center bg-success m-0 pt-4 text-light text-underline">Aniket Enterprises</h2>
-        <div className="container-fluid d-flex justify-content-center align-item-center bg-success form-cont" >
+    <div className='pt-5'>
+        {/* <h2 className="text-center bg-success m-0 pt-4 text-light text-underline">Admin</h2> */}
+        <div className="container-fluid d-flex justify-content-center align-item-center  form-cont h-100 mt-5" >
             
-        <div className="form-container bg-white border rounded-4 p-4 m-4 form-cont01">
-          <h2 className="form-title text-center card-heading">
+        <div className="form-container bg-white border rounded-4 p-4 m-4 form-cont01 shadow">
+          <h2 className="form-title text-center card-heading ">
             <span className="about-text">Sign in </span>
           </h2>
           <form>
-          <div className="mb-3">
+          <div className="mb-3"> 
               <label for="mobile" className="form-label input-headings">
                 Mobile Number
               </label>
